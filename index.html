@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" type="text/css" href="estilo.css">
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            <title>Portifólio do Rafael</title>
+        </head>
+        <body>
+            <header class="header">
+                <a id="navbar-open" onclick="opennav()">
+                    <img src="images/hamburguer.png" alt="Menu hamburguer" />
+                </a>
+                <a id="navbar-close" onclick="closenav()">
+                    <img src="images/hamburguer-close.png" alt="Menu hamburguer" />
+                </a>
+                <nav id="navbar-mobile">
+                    <a class="navbar-btn" href="#container1" onclick="closenav()">HOME</a>
+                    <a class="navbar-btn" href="#container2" onclick="closenav()">QUEM SOU EU</a>
+                    <a class="navbar-btn" href="#container3" onclick="closenav()">HABILIDADES</a>
+                    <a class="navbar-btn" href="#container4" onclick="closenav()">PROJETOS</a>
+                    <a class="navbar-btn" href="#container5" onclick="closenav()">CONTATOS</a>
+                  </nav>
+                  <nav id="navbar-desktop">
+                    <a class="navbar-btn" href="#container1">HOME</a>
+                    <a class="navbar-btn" href="#container2">QUEM SOU EU</a>
+                    <a class="navbar-btn" href="#container3">HABILIDADES</a>
+                    <a class="navbar-btn" href="#container4">PROJETOS</a>
+                    <a class="navbar-btn" href="#container5">CONTATOS</a>
+                  </nav>
+            </header>
+            <main>
+                <section id="container1">
+                    <div class="title">
+                        <h1>OLÁ, meu nome é Rafael!</h1>
+                        <h3>Seja bem vindo ao meu portifólio</h3>
+                    </div>
+                    <div>
+                        <img src="images/avatar.png" class="avatar"/>
+                    </div>
+                </section>
+                <section id="container2">
+                    <h2>QUEM SOU EU</h2>
+                    <p class="apresentation">
+                        Meu nome é Rafael Martinez do Carmo, tenho 19 anos e sou estudante de Sistemas de Informação na Universidade Presbiteriana Mackenzie. 
+                        Após começar a faculdade, me descobri um amante de tecnologia e programação de sistemas. 
+                        Dessa forma, meu objetivo se tornou ser um desenvolvedor Front-End e Back-End.
+                    </p>
+                    <p class="apresentation">
+                        Durante o curso irei aprender diversos ramos do desenvolvimento de programas, 
+                        desde a engenharia de softwares aos bancos de dados. 
+                        Porém após alguns meses na área percebi que tenho gostado mais e por tanto tenho direcionado, meus esforços principalmente ao desenvolvimento Web.
+                    </p>
+                </section>
+                <section id="container3">
+                    <h2 class="border">HABILIDADES</h2>
+                    <div class="logos">
+                        <img src="images/js-logo.png" onclick="opendescription(1)" id="img-logos1">
+                        <img src="images/css-logo.png" onclick="opendescription(2)" id="img-logos2">
+                        <img src="images/html-logo.png" onclick="opendescription(3)" id="img-logos3">
+                    </div>
+                    <div class="logos">
+                        <img src="images/python-logo.png" onclick="opendescription(4)" id="img-logos4">
+                        <img src="images/react-logo.png" onclick="opendescription(5)" id="img-logos5">
+                        <img src="images/java-logo.png" onclick="opendescription(6)" id="img-logos6">
+                    </div>
+                    <div id="description-off">
+                        /* Clique nas habilidades para ler a descrição */ 
+                    </div>
+                    <div id="description-on">
+                        <div id="description1">
+                            <p>JavaScript é uma linguagem de programação interpretada estruturada, de script em alto nível com tipagem dinâmica fraca e multiparadigma.</p>
+                            <p>Nessa linguagem eu possuo mais de 6 meses de experiência, e me considero nível intermediário.</p>
+                        </div>
+                        <div id="description2">
+                            <p>HTML é uma linguagem de marcação utilizada na construção de páginas na Web.</p>
+                            <p>Nessa linguagem eu possuo 1 ano de experiência, e me considero nível avançado.</p>
+                        </div>
+                        <div id="description3">
+                            <p>Cascading Style Sheets é um mecanismo para adicionar estilo a um documento web.</p>
+                            <p>Nessa linguagem eu possuo 1 ano de experiência, e me considero nível avançado.</p>
+                        </div>
+                        <div id="description4">
+                            <p>Python é uma linguagem de programação de alto nível, interpretada de script, imperativa, orientada a objetos, funcional, de tipagem dinâmica e forte.</p>
+                            <p>Nessa linguagem eu possuo 6 meses de experiência, e me considero nível básico.</p>
+                        </div>
+                        <div id="description5">
+                            <p>O React é uma biblioteca front-end JavaScript de código aberto com foco em criar interfaces de usuário em páginas web.</p>
+                            <p>Nesse frame-work eu possuo menos 6 meses de experiência, e me considero nível básico.</p>
+                        </div>
+                        <div id="description6">
+                            <p>Java é uma linguagem de programação orientada a objetos desenvolvida na década de 90 por uma equipe de programadores chefiada por James Gosling.</p>
+                            <p>Nessa linguagem eu possuo 6 meses de experiência, e me considero nível básico.</p>
+                        </div>
+                    </div>
+                </section>
+                <section id="container4">
+                    <h2>PROJETOS</h2>
+                    <div class="project-cards">
+                        <div class="card">
+                            <img src="images/breve.png" class="card-img"/>
+                        </div>
+                        <div class="card">
+                            <img src="images/breve.png" class="card-img"/>
+                        </div>
+                        <div class="card">
+                            <img src="images/breve.png" class="card-img"/>
+                        </div>
+                    </div>
+                    <button type="button" class="btn-mais">VER MAIS</button>
+                </section>
+                <section id="container5">
+                    <h2 class="border">CONTATO</h2>
+                    <div class="contact">
+                        <div>
+                            <p class="email">Email: rafaelmdocarmo@gmail.com</p>
+                            <p class="email">Telefone: (11)99911-0057</p>
+                        </div>
+                        <a type="button" class="github" href="https://github.com/rafaeldocarmo">GITHUB</a>
+                        <a type="button" class="linkedin" href="https://www.linkedin.com/in/rafael-martinez-do-carmo-550133240/">LINKEDIN</a>
+                    </div>
+                </section>
+            </main>
+           
+
+            <script type="text/javascript" src="script.js">
+            </script>
+        </body>
+    </html>

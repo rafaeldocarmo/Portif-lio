@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;700&family=Roboto:wght@900&display=swap');
+
+/*
+ FFFAF1
+ 072302
+ FFFFFF
+*/
+
+body{
+    box-sizing: border-box;
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0px;
+    margin-top: 30px;
+    background-color: #FFFAF1;
+}
+
+/* MENU HAMBURGUER */
+
+header{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 1rem;
+}
+
+#navbar-mobile{
+    height: 100vh;
+    width: 0px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #072302;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    transition: all 0.3s;
+}
+
+#navbar-desktop{
+    display: none;
+}
+
+.navbar-btn{
+    font-family: 'Josefin Sans', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 2.7px;
+    color: #FFFAF1;
+    margin-left: 30px;
+    text-decoration: none;
+    padding-bottom: .5rem;
+}
+
+
+#navbar-close{
+    display: none;
+    z-index: 2;
+}
+
+
+/* CONTAINERS */
+
+main, #container1, #container2, #container3, #container4, #container5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#container2, #container4{
+    background-color: #072302;
+    width: 100%;
+    color: #FFFFFF;
+}
+
+#container1, #container3, #container5{
+    width: 100%;
+    color: #072302;
+}
+
+/* CONTAINER 1 */
+
+.title{
+    width: 80%;
+    text-align: center;
+}
+
+h1{
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+h3{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+
+.avatar{
+    margin-bottom: 1.5rem;
+}
+
+/* CONTAINER 2 */
+
+h2{
+    margin-top: 2.5rem;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+    padding-bottom: 0.3rem;
+    border-bottom: #FFFFFF solid 3px;
+}
+
+.border{
+    border-bottom: #072302 solid 3px; 
+}
+
+.apresentation{
+    width: 90%;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+}
+
+/* CONTAINER 3 */
+
+.logos{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+#img-logos1,#img-logos2, #img-logos3, #img-logos4, #img-logos5, #img-logos6{
+    filter: grayscale(100%);
+    cursor: pointer;
+}
+
+#img-logos1:hover,#img-logos2:hover, #img-logos3:hover, #img-logos4:hover, #img-logos5:hover, #img-logos6:hover{
+    filter: grayscale(0%);
+}
+
+
+
+#description-off, #description-on{
+    width: 80%;
+    margin: 1.5rem 0rem;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1.1rem;
+}
+
+#description1, #description2, #description3, #description4, #description5, #description6{
+    display: none;
+    flex-direction: column;
+}
+
+/* CONTAINER 4 */
+
+.card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    margin: 1rem 0rem;
+}
+
+.card-img{
+    border-radius: 20px;
+}
+
+.btn-mais{
+    display: flex;
+    align-items: center;
+    justify-content: center;;
+    width: 180px;
+    height: 60px;
+    background-color: #FFFAF1;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1.3rem;
+    border: none;
+    margin: 1.5rem 0rem;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+/* CONTAINER 5 */
+
+.contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.email{
+    text-align: center;
+    margin: 0.5rem;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+.github, .linkedin{
+    display: flex;
+    align-items: center;
+    justify-content: center;;
+    width: 180px;
+    height: 60px;
+    background-color: #072302;
+    color: #FFFAF1;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1.3rem;
+    border: none;
+    margin-top: 1rem;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+.linkedin{
+    margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 769px) {
+
+
+/* MENU DESKTOP */
+
+header{
+    justify-content: center;
+}
+#navbar-desktop{
+    height: 5vh;
+    width: 85%;
+    position: relative;
+    flex-direction: row;
+    transition: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+.navbar-btn{
+    color: #072302;
+}
+.navbar-btn:hover{
+    border-bottom: 2px solid #072302;
+}
+#navbar-open{
+    display: none;
+}
+
+/* CONTAINER 1 */
+
+h1{
+    font-size: 2.5rem;
+}
+h3{
+    font-size: 1.3rem;
+    margin-bottom: 2.3rem;
+}
+.avatar{
+    width: 400px;
+    margin-bottom: 1.5rem;
+}
+
+/* CONTAINER 2 */
+
+.apresentation{
+    width: 60%;
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+}
+
+/* CONTAINER 3 */
+
+.logos{
+    width: 60%;
+}
+
+#description-off, #description-on{
+    width: 60%;
+    font-size: 1.5rem;
+}
+
+/* CONTAINER 4 */
+
+.project-cards{
+    display: flex;
+    width: 80%;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+/* CONTAINER 5 */
+
+.contact{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 80%;
+    flex-direction: row;
+    margin-bottom: 2rem;
+}
+
+.linkedin{
+    margin-bottom: 0px;
+}
+
+}
+
+@media screen and (min-width: 1440px){
+
+.project-cards, .contact{
+    width: 60%;
+}
+}
